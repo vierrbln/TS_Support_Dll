@@ -1,0 +1,270 @@
+[uuid(ccc5394d-8111-490e-818a-9f589e368475), helpfile("ts_support.chm"), helpcontext(29), helpstring("Teststand Support hatec TSVP")]
+library ts_support{
+typedef NEED_TYPEDEF CAObjHandle;
+	[dllname("ts_support_32.dll")]
+	module DLLConstants {
+	};
+	[dllname("ts_support_32.dll"), helpcontext(29), helpstring("DatabaseSupport")]
+	module DatabaseSupport{
+		[helpcontext(1), entry("tss_CheckColumnSyntax"), helpstring("Check column syntax")]
+		void NEED_CALLING_CONVENTION tss_CheckColumnSyntax(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR input, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR output, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(2), entry("tss_OpenDBFile"), helpstring("Open DB file")]
+		void NEED_CALLING_CONVENTION tss_OpenDBFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR fileName, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(3), entry("tss_WriteIntoDBFile"), helpstring("Write into DB file")]
+		void NEED_CALLING_CONVENTION tss_WriteIntoDBFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR content, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(4), entry("tss_CloseDBFile"), helpstring("Close DB file")]
+		void NEED_CALLING_CONVENTION tss_CloseDBFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(5), entry("tss_DeleteDBFile"), helpstring("Delete DB file")]
+		void NEED_CALLING_CONVENTION tss_DeleteDBFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR fileName, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("ts_support_32.dll"), helpcontext(29), helpstring("Util")]
+	module Util{
+		[helpcontext(6), entry("tss_SortArray"), helpstring("SortArray")]
+		void NEED_CALLING_CONVENTION tss_SortArray(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] double *numericArray, 
+			[in] int arraySize, 
+			[in] int direction, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(7), entry("tss_ReadFile"), helpstring("Read File")]
+		void NEED_CALLING_CONVENTION tss_ReadFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cFileName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cContent, 
+			[in] int bufferSize, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(8), entry("tss_WriteFile"), helpstring("Write File")]
+		void NEED_CALLING_CONVENTION tss_WriteFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cFileName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cContent, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(9), entry("tss_AppendTxtFile"), helpstring("Append Text to a Txt-File")]
+		void NEED_CALLING_CONVENTION tss_AppendTxtFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cFileName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cContent, 
+			[in] int signsMoveBackFilePointer, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(10), entry("tss_AppendTxtToFileSpecial"), helpstring("Append Text Special (Bitlocker)")]
+		void NEED_CALLING_CONVENTION tss_AppendTxtToFileSpecial(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cFileName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cContent, 
+			[in] int maxCols, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(11), entry("tss_AppendTxtSimple"), helpstring("Append Text Simple")]
+		void NEED_CALLING_CONVENTION tss_AppendTxtSimple(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cFileName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cContent, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(12), entry("tss_DeleteLastLineTxt"), helpstring("DeleteLastLineTxt")]
+		void NEED_CALLING_CONVENTION tss_DeleteLastLineTxt(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cFileName, 
+			[in] int maxCols, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(13), entry("tss_MakeDirectory"), helpstring("Make Directory")]
+		void NEED_CALLING_CONVENTION tss_MakeDirectory(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR directory, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(14), entry("tss_FileExists"), helpstring("File Exists")]
+		void NEED_CALLING_CONVENTION tss_FileExists(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cFileName, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] int *fileExits, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] int *fileSize, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("ts_support_32.dll"), helpcontext(29), helpstring("Some Stuff for Panel Handling")]
+	module SomeStuffforPanelHandling{
+		[helpcontext(15), entry("tss_ShowInitPanel"), helpstring("Show Init Panel")]
+		void NEED_CALLING_CONVENTION tss_ShowInitPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in] int alwaysOntop, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(16), entry("tss_SetTextforInitPanel"), helpstring("Set Text for Init Panel")]
+		void NEED_CALLING_CONVENTION tss_SetTextforInitPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR text, 
+			[in] int alwaysOntop, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(17), entry("tss_SetTextforPanel"), helpstring("Set Text for Panel")]
+		void NEED_CALLING_CONVENTION tss_SetTextforPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR text1, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR text2, 
+			[in] unsigned int color, 
+			[in] int alwaysOntop, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(18), entry("tss_HideInitPanel"), helpstring("Hide Init Panel")]
+		void NEED_CALLING_CONVENTION tss_HideInitPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(19), entry("tss_ShowMeasPanel"), helpstring("Show Meas Panel")]
+		void NEED_CALLING_CONVENTION tss_ShowMeasPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR text, 
+			[in] int alwaysOntop, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(20), entry("tss_SetTextforMeasPanel"), helpstring("Set Text for Meas Panel")]
+		void NEED_CALLING_CONVENTION tss_SetTextforMeasPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in] double measurement, 
+			[in] double lower, 
+			[in] double upper, 
+			[in] int alwaysOntop, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] int *pushed, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(21), entry("tss_HideMeasPanel"), helpstring("Hide Meas Panel")]
+		void NEED_CALLING_CONVENTION tss_HideMeasPanel(
+			[in] CAObjHandle sequenceContext, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("ts_support_32.dll"), helpcontext(29), helpstring("TeststandSupport")]
+	module TeststandSupport{
+		[helpcontext(22), entry("tss_CreateStationGlobals"), helpstring("Create Station Globals")]
+		void NEED_CALLING_CONVENTION tss_CreateStationGlobals(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfPhyIni, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfAppIni, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR benchName, 
+			[in] int countOfPSAM, 
+			[in] int countOfPICT, 
+			[in] int countOfPFG, 
+			[in] int countOfPDFT, 
+			[in] int countOfPAM, 
+			[in] int countOfPHDT, 
+			[in] int countOfPSU, 
+			[in] int countOfPIO2, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(23), entry("tss_LoadAppIniFile"), helpstring("Load application ini")]
+		void NEED_CALLING_CONVENTION tss_LoadAppIniFile(
+			[in] CAObjHandle sequenceContext, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(24), entry("tss_LoadChannels"), helpstring("Load channels")]
+		void NEED_CALLING_CONVENTION tss_LoadChannels(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR nameOfAppIni, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(25), entry("tss_DeleteChannels"), helpstring("Delete Channels")]
+		void NEED_CALLING_CONVENTION tss_DeleteChannels(
+			[in] CAObjHandle sequenceContext, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(26), entry("tss_WriteReport"), helpstring("Write Report")]
+		void NEED_CALLING_CONVENTION tss_WriteReport(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cPathName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cFileName, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cSerialNumber, 
+			[in] int append, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] LPSTR cContent, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+		[helpcontext(27), entry("tss_PictureMessage"), helpstring("Picture Message Box")]
+		void NEED_CALLING_CONVENTION tss_PictureMessage(
+			[in] CAObjHandle sequenceContext, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cMessageText, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cButtonText, 
+			[in] int fontSize, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR cPathToPicture, 
+			[in] int pictureWith, 
+			[in] int pictureHeight, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+	[dllname("ts_support_32.dll"), helpcontext(29), helpstring("Measurements")]
+	module Measurements{
+		[helpcontext(28), entry("tss_AdjustPanel_MeasVoltRMS"), helpstring("Adjusments Volts RMS (obsolete)")]
+		void NEED_CALLING_CONVENTION tss_AdjustPanel_MeasVoltRMS(
+			[in] CAObjHandle sequenceContext, 
+			[in] int PSAMHandle, 
+			[in] int switchManagerHandle, 
+			[in] double range_, 
+			[in] double frequency, 
+			[in] double lowerLimit, 
+			[in] double upperLimit, 
+			[in] double lowerScale, 
+			[in] double upperScale, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR pinLow, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR pinHigh, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR busLow, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR busHigh, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] double *lastMeasurement, 
+			[in] int alwaysOntop, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR title, 
+			[in, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR text, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] short *errorOccurred, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 0)] long *errorCode, 
+			[in, out, custom(53D57340-9A16-11d0-A62C-0020AF16F78E, 1), custom(746B27E2-FBD7-11d1-B311-0060970535CB, "[]")] LPSTR errorMessage);
+	};
+};

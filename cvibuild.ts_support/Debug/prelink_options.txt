@@ -1,0 +1,13 @@
+-inrc x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\resources.in.rc
+-outrc x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\resources.out.rc
+-inmacro x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\ts_support.h.hmacros
+-inhdef x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\ts_support.h.hdefs
+-indeclinfo x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\ts_support.h.declinfo
+-outdef x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\ts_support_32.dll.defs
+-indeclinfo x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\ts_support.c.declinfo
+-indefprot x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\ts_support.obj.cvidefprots
+-inodl x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\template.odl
+-outodl x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\cvibuild.ts_support\Debug\typelib.odl
+-cc cdecl
+-libraryName ts_support
+-dllName ts_support_32.dll

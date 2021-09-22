@@ -1,0 +1,82 @@
+[ALIAS]
+IDH_tss_CheckColumnSyntax=ts_support_files\Functtss_CheckColumnSyntax.html
+IDH_tss_OpenDBFile=ts_support_files\Functtss_OpenDBFile.html
+IDH_tss_WriteIntoDBFile=ts_support_files\Functtss_WriteIntoDBFile.html
+IDH_tss_CloseDBFile=ts_support_files\Functtss_CloseDBFile.html
+IDH_tss_DeleteDBFile=ts_support_files\Functtss_DeleteDBFile.html
+IDH_tss_SortArray=ts_support_files\Functtss_SortArray.html
+IDH_tss_WriteFile=ts_support_files\Functtss_WriteFile.html
+IDH_tss_AppendTxtFile=ts_support_files\Functtss_AppendTxtFile.html
+IDH_tss_MakeDirectory=ts_support_files\Functtss_MakeDirectory.html
+IDH_tss_ShowInitPanel=ts_support_files\Functtss_ShowInitPanel.html
+IDH_tss_SetTextforInitPanel=ts_support_files\Functtss_SetTextforInitPanel.html
+IDH_tss_SetTextforPanel=ts_support_files\Functtss_SetTextforPanel.html
+IDH_tss_HideInitPanel=ts_support_files\Functtss_HideInitPanel.html
+IDH_tss_ShowMeasPanel=ts_support_files\Functtss_ShowMeasPanel.html
+IDH_tss_SetTextforMeasPanel=ts_support_files\Functtss_SetTextforMeasPanel.html
+IDH_tss_HideMeasPanel=ts_support_files\Functtss_HideMeasPanel.html
+IDH_tss_CreateStationGlobals=ts_support_files\Functtss_CreateStationGlobals.html
+IDH_tss_LoadAppIniFile=ts_support_files\Functtss_LoadAppIniFile.html
+IDH_tss_LoadChannels=ts_support_files\Functtss_LoadChannels.html
+IDH_tss_DeleteChannels=ts_support_files\Functtss_DeleteChannels.html
+IDH_tss_WriteReport=ts_support_files\Functtss_WriteReport.html
+IDH_tss_AdjustPanel_MeasVoltRMS=ts_support_files\Functtss_AdjustPanel_MeasVoltRMS.html
+IDH_ts_support_html_main_file=ts_support.html
+
+[MAP]
+#define IDH_tss_CheckColumnSyntax 1
+#define IDH_tss_OpenDBFile 2
+#define IDH_tss_WriteIntoDBFile 3
+#define IDH_tss_CloseDBFile 4
+#define IDH_tss_DeleteDBFile 5
+#define IDH_tss_SortArray 6
+#define IDH_tss_WriteFile 7
+#define IDH_tss_AppendTxtFile 8
+#define IDH_tss_MakeDirectory 9
+#define IDH_tss_ShowInitPanel 10
+#define IDH_tss_SetTextforInitPanel 11
+#define IDH_tss_SetTextforPanel 12
+#define IDH_tss_HideInitPanel 13
+#define IDH_tss_ShowMeasPanel 14
+#define IDH_tss_SetTextforMeasPanel 15
+#define IDH_tss_HideMeasPanel 16
+#define IDH_tss_CreateStationGlobals 17
+#define IDH_tss_LoadAppIniFile 18
+#define IDH_tss_LoadChannels 19
+#define IDH_tss_DeleteChannels 20
+#define IDH_tss_WriteReport 21
+#define IDH_tss_AdjustPanel_MeasVoltRMS 22
+#define IDH_ts_support_html_main_file 23
+
+[FILES]
+ts_support.html
+ts_support_files\Alphabetical Function Index.html
+ts_support_files\Hierarchical Function Index.html
+ts_support_files\ClassDatabaseSupport.html
+ts_support_files\ClassUtil.html
+ts_support_files\ClassSome Stuff for Panel Handling.html
+ts_support_files\ClassTeststandSupport.html
+ts_support_files\ClassMeasurements.html
+ts_support_files\Functtss_CheckColumnSyntax.html
+ts_support_files\Functtss_OpenDBFile.html
+ts_support_files\Functtss_WriteIntoDBFile.html
+ts_support_files\Functtss_CloseDBFile.html
+ts_support_files\Functtss_DeleteDBFile.html
+ts_support_files\Functtss_SortArray.html
+ts_support_files\Functtss_WriteFile.html
+ts_support_files\Functtss_AppendTxtFile.html
+ts_support_files\Functtss_MakeDirectory.html
+ts_support_files\Functtss_ShowInitPanel.html
+ts_support_files\Functtss_SetTextforInitPanel.html
+ts_support_files\Functtss_SetTextforPanel.html
+ts_support_files\Functtss_HideInitPanel.html
+ts_support_files\Functtss_ShowMeasPanel.html
+ts_support_files\Functtss_SetTextforMeasPanel.html
+ts_support_files\Functtss_HideMeasPanel.html
+ts_support_files\Functtss_CreateStationGlobals.html
+ts_support_files\Functtss_LoadAppIniFile.html
+ts_support_files\Functtss_LoadChannels.html
+ts_support_files\Functtss_DeleteChannels.html
+ts_support_files\Functtss_WriteReport.html
+ts_support_files\Functtss_AdjustPanel_MeasVoltRMS.html
+ts_support_files\htmlhelp.css

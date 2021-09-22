@@ -1,0 +1,20 @@
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:209:11: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wint-conversion]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:248:11: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wint-conversion]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:502:11: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wint-conversion]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:622:12: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wint-conversion]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:627:18: warning: variable 'cLine' may be uninitialized when used here [-Wuninitialized]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:564:3: note: variable 'cLine' is declared here
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:630:28: warning: variable 'cLine' may be uninitialized when used here [-Wuninitialized]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:564:3: note: variable 'cLine' is declared here
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:637:28: warning: variable 'cLine' may be uninitialized when used here [-Wuninitialized]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:564:3: note: variable 'cLine' is declared here
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:788:12: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wint-conversion]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:802:12: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wint-conversion]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:818:28: warning: variable 'cLine' may be uninitialized when used here [-Wuninitialized]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:734:3: note: variable 'cLine' is declared here
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:1037:116: warning: variable 'cCopyBench' may be uninitialized when used here [-Wuninitialized]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:928:5: note: variable 'cCopyBench' is declared here
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:1361:59: warning: variable 'BenchName' may be uninitialized when used here [-Wuninitialized]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:1270:17: note: initialize the variable 'BenchName' to silence this warning
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:1767:19: warning: variable 'cAppend' may be uninitialized when used here [-Wuninitialized]
+x:\OneDrive\softwerk4R\Repos\TS_Support_Dll\ts_support.c:1720:2: note: variable 'cAppend' is declared here

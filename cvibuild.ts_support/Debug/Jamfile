@@ -1,0 +1,83 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\Programme\\Rohde&Schwarz\\GTSL\\Include"
+	"c:\\Programme\\National Instruments\\TestStand 4.0\\API\\CVI"
+	"c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Include"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2017 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2017\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr\\TestStand\\API"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Bin"
+	"x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "hrestim.h" = "c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Include" ;
+LOCATE on "rspsam.h" = "c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Include" ;
+LOCATE on "swmgr.h" = "c:\\Program Files (x86)\\Rohde-Schwarz\\GTSL\\Include" ;
+LOCATE on "ts_support.c" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll" ;
+LOCATE on "ts_support.h" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll" ;
+Object "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.obj" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support.c" ;
+FILENUM on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.obj" = 1 ;
+DEFPROTS on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.obj" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.obj.cvidefprots" ;
+OUTFILE on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.obj" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.obj.out" ;
+PrjObjects += "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.obj" ;
+Object "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hdefs" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support.h" ;
+FILENUM on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hdefs" = 2 ;
+OUTFILE on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hdefs" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hdefs.out" ;
+Object "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hmacros" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support.h" ;
+FILENUM on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hmacros" = 3 ;
+OUTFILE on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hmacros" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.hmacros.out" ;
+Object "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.declinfo" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support.h" ;
+FILENUM on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.declinfo" = 4 ;
+OUTFILE on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.declinfo" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.h.declinfo.out" ;
+Object "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.c.declinfo" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support.c" ;
+FILENUM on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.c.declinfo" = 5 ;
+OUTFILE on "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.c.declinfo" = "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support.c.declinfo.out" ;
+PreLinkInputs += "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.in.rc" ;
+PreLinkInputs += "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\template.odl" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.out.rc" ;
+PreLinkOutputs += "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll.defs" ;
+PreLinkOutputs += "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\typelib.odl" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll.defs" ;
+Midl "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\typelib.odl.tlb" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\typelib.odl" ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\typelib.odl.tlb" : $(PreLinkOutputs) ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.res" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\typelib.odl.tlb" ;
+Object "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.res" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.out.rc" ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.res" : $(PreLinkOutputs) ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.res" "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.res" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\manifest.xml" ;
+MainFromObjects "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\link_options.txt" ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\dependencies.lnk.in" ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\link_list.txt" ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll" : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.res" ;
+Depends "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\resources.res" :  "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support_uir.uir" ;
+Depends all : "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\ts_support_32.dll" ;

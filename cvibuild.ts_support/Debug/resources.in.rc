@@ -1,0 +1,41 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,0,0
+ PRODUCTVERSION 2,2,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0x1L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Teststand Support for R&S CompactTSVP\0"
+            VALUE "FileVersion", "1.6.0.0\0"
+            VALUE "InternalName", "S106\0"
+            VALUE "LegalCopyright", "Copyright © Robert Renner 2009-2018\0"
+            VALUE "LegalTrademarks", "Free software under terms of  GNU General Public License.\0"
+            VALUE "OriginalFilename", "ts_support.dll\0"
+            VALUE "ProductName", "SW-ITS\0"
+            VALUE "ProductVersion", "2.2.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+1 typelib "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\typelib.odl.tlb"
+ts:support:uir.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support_uir.uir"

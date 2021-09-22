@@ -1,0 +1,122 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,0,0
+ PRODUCTVERSION 2,2,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0x1L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Teststand Support for R&S CompactTSVP\0"
+            VALUE "FileVersion", "1.6.0.0\0"
+            VALUE "InternalName", "S106\0"
+            VALUE "LegalCopyright", "Copyright © Robert Renner 2009-2018\0"
+            VALUE "LegalTrademarks", "Free software under terms of  GNU General Public License.\0"
+            VALUE "OriginalFilename", "ts_support.dll\0"
+            VALUE "ProductName", "SW-ITS\0"
+            VALUE "ProductVersion", "2.2.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+1 typelib "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\cvibuild.ts_support\\Debug\\typelib.odl.tlb"
+ts:support:uir.uir UIRFileType "x:\\OneDrive\\softwerk4R\\Repos\\TS_Support_Dll\\ts_support_uir.uir"
+
+CVIDLLexports CVIDLLprototypes
+{
+   "int Command(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int Measure(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "void tss_AdjustPanel_MeasVoltRMS(CAObjHandle sequenceContext, int PSAMHandle, int switchManagerHandle, double range, double Frequency, double lowerLimit, double upperLimit, double lowerScale, double upperScale, char *pinLow, char *pinHigh, char *busLow, char *busHigh, double *lastMeasurement, int alwaysOntop, char *title, char *text, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_AppendTxtFile(CAObjHandle sequenceContext, char *cFileName, char *cContent, int iSignsMoveBackFilePointer, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_AppendTxtSimple(CAObjHandle sequenceContext, char *cFileName, char *cContent, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_AppendTxtToFileSpecial(CAObjHandle sequenceContext, char *cFileName, char *cContent, int iMaxCols, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_CheckColumnSyntax(CAObjHandle sequenceContext, char *input, char *output, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_CloseDBFile(CAObjHandle sequenceContext, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_CreateStationGlobals(CAObjHandle sequenceContext, char *nameOfPhyIni, char *nameOfAppIni, char *benchName, int countOfPSAM, int countOfPICT, int countOfPFG, int countOfPDFT, int countOfPAM, int countOfPHDT, int countOfPSU, int countOfPIO2, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_DeleteChannels(CAObjHandle sequenceContext, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_DeleteDBFile(CAObjHandle sequenceContext, char *fileName, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_DeleteLastLineTxt(CAObjHandle sequenceContext, char *cFileName, int iCutAtLineBefore, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_FileExists(CAObjHandle sequenceContext, char *cFileName, int *fileExits, int *fileSize, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_FileToArray(CAObjHandle sequenceContext, char *cFileAndPathName, double *dArray, int iSize, int iGroups, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_HideInitPanel(CAObjHandle sequenceContext, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_HideMeasPanel(CAObjHandle sequenceContext, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_LoadAppIniFile(CAObjHandle sequenceContext, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_LoadChannels(CAObjHandle sequenceContext, char *nameOfAppIni, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_MakeDirectory(CAObjHandle sequenceContext, char *cDirectory, short *pErrorOccurred, long *pErrorCode, char *errorMessage);"
+   "\n",
+   "void tss_OpenDBFile(CAObjHandle sequenceContext, char *fileName, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_PictureMessageBox(CAObjHandle sequenceContext, char *cMessageText, char *cButtonText, int FontSize, char *cPathToPicture, int PictureWith, int PictureHeight, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_ReadFile(CAObjHandle sequenceContext, char *cFileName, char *cContent, int iBufferSize, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_ReadFirstLineOfFile(CAObjHandle sequenceContext, char *cFileName, char *cContent, int iBufferSize, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_SetTextforInitPanel(CAObjHandle sequenceContext, char *text, int AlwaysOnTop, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_SetTextforMeasPanel(CAObjHandle sequenceContext, double measurement, double lower, double upper, int AlwaysOnTop, int *pushed, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_SetTextforPanel(CAObjHandle sequenceContext, char *text1, char *text2, unsigned int iColour, int AlwaysOnTop, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_ShowInitPanel(CAObjHandle sequenceContext, int AlwaysOnTop, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_ShowMeasPanel(CAObjHandle sequenceContext, char *text, int AlwaysOnTop, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_SolveMean(CAObjHandle sequenceContext, double *InputArray, int NumberOfElements, double *MeanValue, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_SolveMedian(CAObjHandle sequenceContext, double *InputArray, int NumberOfElements, double *MedianValue, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_SolveRMS(CAObjHandle sequenceContext, double *InputArray, int NumberOfElements, double *RMSValue, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_SortArray(CAObjHandle sequenceContext, double *numericArray, int arraySize, int direction, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_WriteFile(CAObjHandle sequenceContext, char *cFileName, char *cContent, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_WriteFileAppend(CAObjHandle sequenceContext, char *cFileName, char *cContent, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_WriteIntoDBFile(CAObjHandle sequenceContext, char *content, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "void tss_WriteReport(CAObjHandle sequenceContext, char *cPathName, char *cFileName, char *cSerialNumber, int append, char *cContent, short *errorOccurred, long *errorCode, char *errorMessage);"
+   "\n",
+   "\0"
+}

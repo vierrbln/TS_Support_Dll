@@ -1,0 +1,11 @@
+[ALIAS]
+IDH_ts_support_html_main_file=ts_support.html
+
+[MAP]
+#define IDH_ts_support_html_main_file 1
+
+[FILES]
+ts_support.html
+ts_support_files\Alphabetical Function Index.html
+ts_support_files\Hierarchical Function Index.html
+ts_support_files\htmlhelp.css

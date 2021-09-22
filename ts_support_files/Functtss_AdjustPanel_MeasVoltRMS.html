@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" href="htmlhelp.css" type="text/css">
+    <title>tss_AdjustPanel_MeasVoltRMS</title>
+  </head>
+  <body>
+    <h1>tss_AdjustPanel_MeasVoltRMS</h1>
+    <p class="syntax">
+      void tss_AdjustPanel_MeasVoltRMS (CAObjHandle sequenceContext, int PSAMHandle,
+                                  int switchManagerHandle, double range,
+                                  double frequency, double lowerLimit,
+                                  double upperLimit, double lowerScale,
+                                  double upperScale, char pinLow[],
+                                  char pinHigh[], char busLow[],
+                                  char busHigh[], double *lastMeasurement,
+                                  int alwaysOntop, char title[], char text[],
+                                  short *errorOccurred, long *errorCode,
+                                  char errorMessage[]);
+    </p>
+    <h2>Parameters</h2>
+    <table class="borderless" summary="Parameter help">
+      <tr>
+        <td valign="top"><em class="label">Input</em></td>
+      </tr>
+      <tr>
+        <td class="tablehead">Name</td>
+        <td class="tablehead">Type</td>
+        <td class="tablehead">Description</td>
+      </tr>
+      <tr>
+        <td class="paramName">sequenceContext</td>
+        <td class="paramDataType">CAObjHandle</td>
+        <td>
+    <p class="body">
+    For use with TestStand: The TestStand sequence context (&quot;ThisContext&quot;)
+    <br/>
+    For use in other environments: Must be zero.
+    </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="paramName">PSAMHandle</td>
+        <td class="paramDataType">int</td>
+      </tr>
+      <tr>
+        <td class="paramName">switchManagerHandle</td>
+        <td class="paramDataType">int</td>
+      </tr>
+      <tr>
+        <td class="paramName">range</td>
+        <td class="paramDataType">double</td>
+      </tr>
+      <tr>
+        <td class="paramName">frequency</td>
+        <td class="paramDataType">double</td>
+      </tr>
+      <tr>
+        <td class="paramName">lowerLimit</td>
+        <td class="paramDataType">double</td>
+      </tr>
+      <tr>
+        <td class="paramName">upperLimit</td>
+        <td class="paramDataType">double</td>
+      </tr>
+      <tr>
+        <td class="paramName">lowerScale</td>
+        <td class="paramDataType">double</td>
+      </tr>
+      <tr>
+        <td class="paramName">upperScale</td>
+        <td class="paramDataType">double</td>
+      </tr>
+      <tr>
+        <td class="paramName">pinLow</td>
+        <td class="paramDataType">char []</td>
+      </tr>
+      <tr>
+        <td class="paramName">pinHigh</td>
+        <td class="paramDataType">char []</td>
+      </tr>
+      <tr>
+        <td class="paramName">busLow</td>
+        <td class="paramDataType">char []</td>
+      </tr>
+      <tr>
+        <td class="paramName">busHigh</td>
+        <td class="paramDataType">char []</td>
+      </tr>
+      <tr>
+        <td class="paramName">alwaysOntop</td>
+        <td class="paramDataType">int</td>
+      </tr>
+      <tr>
+        <td class="paramName">title</td>
+        <td class="paramDataType">char []</td>
+      </tr>
+      <tr>
+        <td class="paramName">text</td>
+        <td class="paramDataType">char []</td>
+      </tr>
+      <tr>
+        <td valign="top"><em class="label">Output</em></td>
+      </tr>
+      <tr>
+        <td class="tablehead">Name</td>
+        <td class="tablehead">Type</td>
+        <td class="tablehead">Description</td>
+      </tr>
+      <tr>
+        <td class="paramName">lastMeasurement</td>
+        <td class="paramDataType">double (passed by reference)</td>
+      </tr>
+      <tr>
+        <td class="paramName">errorOccurred</td>
+        <td class="paramDataType">short (passed by reference)</td>
+        <td>
+    <p class="body">
+    Error Flag.
+    <br/>
+    Return :
+    <br/>
+    0 -&gt; No Error
+    <br/>
+    1 -&gt; Error Occured
+    </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="paramName">errorCode</td>
+        <td class="paramDataType">long (passed by reference)</td>
+        <td>
+    <p class="body">
+    Error code. Negative values indicate an error.
+    <br/>
+    Return:
+    <br/>
+    0 -&gt; No Error
+    <br/>
+    &lt; 0 -&gt; Error
+    </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="paramName">errorMessage</td>
+        <td class="paramDataType">char []</td>
+        <td>
+    <p class="body">
+    Error message buffer (1024 bytes)
+    <br/>
+    In case of an error, the error message is copied into the error message buffer. The buffer remains unchanged if the function returns successfully.
+    </p>
+        </td>
+      </tr>
+    </table>
+    <h2>References</h2>
+    <p class="body">
+      <a href="ClassMeasurements.html">Measurements</a><br/>
+      <a href="Teststand%20Support%20hatec%20TSVP.html">Teststand Support hatec TSVP</a><br/>
+      <a href="Alphabetical%20Function%20Index.html">Alphabetical Function Index</a><br/>
+      <a href="Hierarchical%20Function%20Index.html">Hierarchical Function Index</a><br/>
+    </p>
+  </body>
+</html>
